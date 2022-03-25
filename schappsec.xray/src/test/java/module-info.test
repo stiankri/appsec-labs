@@ -1,0 +1,8 @@
+--add-opens
+  schappsec.xray/com.schibsted.security.labs.analysis.parser=org.junit.platform.commons
+
+--add-modules
+  org.junit.jupiter.api
+
+--add-reads
+  schappsec.xray=org.junit.jupiter.api

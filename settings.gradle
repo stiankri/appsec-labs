@@ -1,0 +1,5 @@
+rootProject.name = 'appsec-labs'
+
+include 'schappsec.jack'
+include 'schappsec.xray'
+include 'schappsec.dicey'
