@@ -1,0 +1,27 @@
+plugins {
+  id 'java'
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.0.12'
+  id 'org.javamodularity.moduleplugin' version '1.8.10'
+}
+
+repositories {
+  mavenCentral()
+}
+
+javafx {
+  version = "17"
+  modules = ["javafx.controls"]
+}
+
+dependencies {
+  implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2'
+}
+
+application {
+  getMainClass().set("messaging.frontend.MessagingApplication")
+  applicationName = "messaging"
+  mainModule = 'messaging'
+}
+
+version = "0.0.1"
